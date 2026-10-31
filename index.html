@@ -182,9 +182,9 @@
     .target b { display: block; font-size: 13px; letter-spacing: .04em; line-height: 1.3; }
     .target small { display: block; overflow: hidden; color: var(--dim); font-size: 10px; line-height: 1.25; white-space: nowrap; text-overflow: ellipsis; }
 
-    .target:hover, .target:active { color: var(--night); background: var(--blue); }
-    .target:hover small, .target:active small,
-    .target:hover::after, .target:active::after { color: var(--night); }
+    .target:active { color: var(--night); background: var(--blue); }
+    .target:active small,
+    .target:active::after { color: var(--night); }
 
     .actions {
       display: grid;
@@ -209,7 +209,15 @@
     }
 
     .btn-solid { color: var(--night); background: var(--blue); border-color: var(--blue); }
-    .btn:hover, .btn:active { color: var(--night); background: var(--paper); }
+    .btn:active { color: var(--night); background: var(--paper); }
+
+    /* Touch browsers keep :hover after a tap, which left cards stuck highlighted. */
+    @media (hover: hover) and (pointer: fine) {
+      .target:hover { color: var(--night); background: var(--blue); }
+      .target:hover small,
+      .target:hover::after { color: var(--night); }
+      .btn:hover { color: var(--night); background: var(--paper); }
+    }
 
     /* Links and name share a left column; the hero takes the right. */
     @media (min-width: 900px) and (orientation: landscape) {

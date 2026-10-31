@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Puri;Aaryan;;;
+FN:Aaryan Puri
+TITLE:Jr. Python Developer
+ADR;TYPE=HOME:;;;Pune;Maharashtra;;India
+URL:https://aaryanpuri.me
+X-SOCIALPROFILE;TYPE=linkedin:https://www.linkedin.com/in/aaryanpuri
+X-SOCIALPROFILE;TYPE=github:https://github.com/AaryanPuri
+X-SOCIALPROFILE;TYPE=twitter:https://x.com/Aaryan_75
+END:VCARD

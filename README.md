@@ -1,4 +1,4 @@
-# AARYAN.TAP
+# NFC-Tap
 
 The landing page behind my NFC tag. Tap the tag and a live WebGL hero launches on your phone, with my links shown as a heads-up display.
 
@@ -21,18 +21,4 @@ The page steps down its quality on slow phones and falls back to a still image w
 | `aaryan-puri.vcf` | Contact card for the Save contact button |
 | `vercel.json` | Serves the contact card with the right headers |
 
-## Run locally
 
-```bash
-python3 -m http.server 8000
-```
-
-Then open http://localhost:8000.
-
-## Deploy
-
-Pushing to `main` deploys to Vercel automatically. The NFC tag doesn't need rewriting.
-
-## Credits
-
-The hero artwork belongs to its original owner and isn't covered by anything in this repo.
